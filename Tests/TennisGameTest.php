@@ -9,6 +9,8 @@ class TennisGameTest extends \PHPUnit_Framework_TestCase
     {
         $tennisGame = $this->generateTennisGame(0, 0);
 
+        $this->assertEquals("0", $tennisGame->getScorePlayerA());
+        $this->assertEquals("0", $tennisGame->getScorePlayerB());
         $this->assertEquals(TennisGame::NO_WINNER, $tennisGame->getWinner());
     }
 
